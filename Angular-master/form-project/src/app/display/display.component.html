@@ -1,0 +1,23 @@
+<table class="table">
+<tr>
+  <td>Name:</td>
+  <td><input type="text" #name></td>
+</tr>
+<tr>
+  <td>Mobile:</td>
+  <td><input type="" #mobileNo></td>
+</tr>
+<button type="button" class="btn btn-primary" (click)="onSave(name.value, mobileNo.value )" align="right">Submit</button>
+</table>
+
+<table class="table">
+  <tr>
+      <th>Name</th>
+      <th>Mobile</th>
+  </tr>
+  <tr *ngFor="let data of dataArray">
+    <td>{{data.name}}</td>
+    <td>{{data.mobile}}</td>
+  </tr>
+
+  </table>

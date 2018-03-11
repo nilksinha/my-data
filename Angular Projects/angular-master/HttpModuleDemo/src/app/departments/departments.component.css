@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 5px solid goldenrod;
+    font-size:17px;    
+}
+th {
+    color: blueviolet;
+}
+td {
+    color: brown;
+}
+input {
+    width: 225px;
+    margin: 8px 0;
+    background-color: #dfdfdf;
+    font-size:17px;
+}
+button {
+    background-color: green;
+    color: white;
+}
+.error{
+    color: red;
+    font-size: 20px;
+}
+.success{
+    color: green;
+    font-size: 20px;
+} 

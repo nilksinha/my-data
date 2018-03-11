@@ -1,0 +1,76 @@
+<table>
+
+    <tr >
+      <td>Subject 1 Marks:</td>
+      <td>
+        <input type="number" [(ngModel)]="markResult.marks1">
+      </td>
+    </tr>
+    <tr>
+    <tr >
+        <td>Subject 2 Marks:</td>
+        <td>
+          <input type="number" [(ngModel)]="markResult.marks2">
+        </td>
+      </tr>
+    <tr>
+        <tr >
+            <td>Subject 3 Marks:</td>
+            <td>
+              <input type="number" [(ngModel)]="markResult.marks3">
+            </td>
+          </tr>
+        <tr>
+            <tr >
+                <td>Subject 4 Marks:</td>
+                <td>
+                  <input type="number" [(ngModel)]="markResult.marks4">
+                </td>
+              </tr>
+            <tr>
+                <tr >
+                    <td>Subject 5 Marks:</td>
+                    <td>
+                      <input type="number" [(ngModel)]="markResult.marks5">
+                    </td>
+                  </tr>
+                <tr>
+                    <tr >
+                        <td>Subject 6 Marks:</td>
+                        <td>
+                          <input type="number" [(ngModel)]="markResult.marks6">
+                        </td>
+                      </tr>
+                    <tr>
+</tr>
+
+
+
+<input type="button" value="Total Marks" (click)=showTotalMarks()>
+<input type="button" value="Show Percentage" (click)=showPercentage()>
+<input type="button" value="Show Grade" (click)=showGrade()>
+</table>
+<div>Total Marks: {{totalMarks}}</div><br>
+<div>Percentage Marks: {{percentage}}</div><br>
+
+  <div *ngIf="grade>=70;then distinction;"></div>
+  <div *ngIf="grade>=60;then firstClass;"></div>
+  <div *ngIf="grade>=50;then secondClass;"></div>
+  <div *ngIf="grade>=35;then pass;"></div>
+  <div *ngIf="grade<35;then fail;"></div>
+Grade:
+<ng-template #fail>
+     fail
+  </ng-template>
+<ng-template #pass>
+   pass
+</ng-template>
+<ng-template #secondClass>
+  Second Class
+</ng-template>
+<ng-template #firstClass>
+   First Class
+</ng-template>
+<ng-template #destinction>
+  Destinction
+</ng-template>

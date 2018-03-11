@@ -1,0 +1,19 @@
+<h2>View Detail</h2>
+<ul [ngClass] = "'view-detail'">
+  <li>
+    Id: {{person.id}}
+  </li>
+  <li>
+    Name: {{person.name}}
+  </li>
+  <li>
+    City: {{person.city}}
+  </li>
+  <li>
+    MobileNo: {{person.mobileNo}}
+  </li>  
+</ul>
+<div>
+ <button (click)="goBack()">Go Back</button>
+ <button (click)="updatePerson(person.id)">Update</button>
+</div>

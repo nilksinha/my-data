@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse;
+}
+table, th, td {
+    text-align: center;
+    border: 1px solid grey;
+}
+.label{
+    color: red;
+}
+h3{
+     color: blueviolet               
+}

@@ -1,0 +1,13 @@
+webpack
+
+HOT MODULE REPLACEMENT
+
+Interview Topics
+
+Typescript
+Angular
+
+Important Angular Commands
+1) ng new project-name  // to create new project
+2) npm install    // to install node_module dependencies
+3) ng generate component com-name // to create components

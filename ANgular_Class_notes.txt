@@ -1,0 +1,67 @@
+Day 1 Sunday 11th feb
+---------------------------------------------------------
+npm -- node package manager to install libararis
+
+npm install -g            install it globally    to install all the depedencies from package.json
+
+npm.js        repository
+
+npm init to create project manually
+
+CLI(command line interface)- For creating new proejct Command line interface. 
+	 We can cretae our own CLI
+
+yan- package manger
+
+
+IDE - Visula Studio code
+      web storm
+	 
+Prism CSS
+
+code .. to open project in visual studio
+
+JIT - just in time compiler
+
+Day 2 Sunday 18th feb
+---------------------------------------------------------
+
+Node JS    is librarary -- server side javascript framework
+ng means angular
+
+npm start
+npm build
+npm test we can do
+
+package means module
+
+ng genrate component nameofcomponent --spec=false
+
+Day 3 Sunday 25th feb
+--------------------------------------------
+local referance variable start with #
+
+*for structure directive
+
+Day 4 Saturday 3 March
+---------------------------------------------
+[ngClass]="'value'";  to hard code value
+
+let i = index to know the index of *ngFor
+
+<ng-template></ng-template> Does not show any data inside it. We need to call to show this data
+
+ifElse
+
+Day 5 Sunday 5 March
+---------------------------------------------
+[(ngModel)]
+
+
+Day 6 saturday 10 March
+---------------------------------
+@input
+
+Day 7 Sunday 10 March
+---------------------------------
+@output

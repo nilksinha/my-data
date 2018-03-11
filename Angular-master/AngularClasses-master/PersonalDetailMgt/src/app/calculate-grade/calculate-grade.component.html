@@ -1,0 +1,14 @@
+
+<table>
+  <tr>
+    <td>Enter Percentage:</td>
+    <td><input type=text #percentage/></td>    
+  </tr>
+  <tr>
+    <td><button type="button" class="btn btn-primary" (click)="findGrade(percentage.value)">Find Grade</button></td>
+  </tr>
+</table>
+<span *ngIf="grade != ''">
+  Your Grade is {{grade}}
+</span>
+

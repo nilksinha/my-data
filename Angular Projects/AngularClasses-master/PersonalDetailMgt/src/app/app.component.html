@@ -1,0 +1,29 @@
+<!--<div class="container-fluid">
+<button class="btn btn-danger">Hi</button>
+<h3 class="heading">Personal Information</h3>
+<table class="table-hover">
+  <tr>
+    <td class="label">Pan No</td>
+    <td>{{panNo}}</td>
+  </tr>
+  <tr>
+    <td class="label">First Name</td>
+    <td>{{firstName}}</td>
+  </tr>
+  <tr>
+    <td class="label">Last Name</td>
+    <td>{{lastName}}</td>
+  </tr>
+</table>
+<h3>Contact Information</h3>
+<app-contact></app-contact>
+<h3>Address Information</h3>
+<app-address></app-address>
+<h3>Education Profile</h3>
+<app-education></app-education>
+<app-professional></app-professional>
+</div>-->
+<h3>Contact Information</h3>
+<app-contact [mobileNo]="mobileNumber" [email]="email"></app-contact>
+<app-calculate-grade></app-calculate-grade>
+<app-manage-employee></app-manage-employee>

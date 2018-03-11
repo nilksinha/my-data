@@ -1,0 +1,53 @@
+<input type="text" #friendName />
+<button class="btn btn-info" (click)="addNewFriend(friendName.value)">Add New Friend</button>
+<ul *ngFor="let name of friendsName">
+    <li>{{name}}</li>
+</ul>
+
+
+
+
+<table class="table" align=center>
+    <tr>
+        <td>Name:</td>
+        <td><input type=text #name /></td>
+    </tr>
+    <tr>
+        <td>Mobile No:</td>
+        <td><input type=text #mobileNo /></td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td><input type=text #email /></td>
+    </tr>
+    <tr>
+        <td>Course:</td>
+        <td><input type=text #course /></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button class="btn btn-primary" type="button" [disabled]="name.value === ''?false:true" (click)="saveInquiry(name.value,mobileNo.value,email.value,course.value)">Submit</button>
+        </td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Mobile No</th>
+        <th>Email</th>
+        <th>Course</th>
+    </tr>
+    <tr *ngFor="let inquir of inquiryList;let i=index;" [ngClass]="i%2 == 0 ? 'evenRow' : 'oddRow'">        
+        <td>{{inquir.name}}</td>
+        <td>{{inquir.mobileNo}}</td>
+        <td>{{inquir.email}}</td>        
+        <td *ngIf="inquir.course==='Angular';then ifBlock;else elseBlock"></td>         
+        <ng-template #ifBlock>
+            <td [ngClass]="'impCourse'">{{inquir.course}}</td>
+        </ng-template>
+        <ng-template #elseBlock>
+            <td>{{inquir.course}}</td>
+        </ng-template>
+    </tr>    
+</table>
+<app-message></app-message>

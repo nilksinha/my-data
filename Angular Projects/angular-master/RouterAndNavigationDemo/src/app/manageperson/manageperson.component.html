@@ -1,0 +1,8 @@
+<h2>Manage Person</h2>
+<ul [ngClass] = "'manage-person'">
+  <li *ngFor="let person of persons" >
+          Id: {{person.id}}, Name = {{person.name}}
+	  <button (click)="updatePerson(person.id)" class="btn btn-sm btn-primary">Update</button>
+	  <button (click)="deletePerson(person.id)" class="btn btn-sm btn-primary">Remove</button>
+  </li>
+</ul> 

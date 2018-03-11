@@ -1,0 +1,21 @@
+<h2>Update Person</h2>
+<div>
+ <div>
+    <label>Id: </label> {{person.id}}
+ </div>	
+ <div>
+    <label>Name: </label>
+    <input [(ngModel)]="person.name" />
+ </div>	
+ <div>
+    <label>City: </label>
+    <input [(ngModel)]="person.city" />
+ </div>	
+ <div>
+    <label>MobileNo: </label>
+    <input [(ngModel)]="person.mobileNo" />
+ </div>	 
+ <div> 
+    <button (click)="goBack()">Go Back</button>
+ </div> 
+</div>  

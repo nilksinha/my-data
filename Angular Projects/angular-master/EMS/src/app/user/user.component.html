@@ -1,0 +1,40 @@
+<h3> Reactive Form Demo </h3>
+<div> 
+ <form [formGroup]="userForm" (ngSubmit)="onFormSubmit()">
+  <div>
+    Name: <input formControlName="name"  placeholder="Enter Name">
+    <div *ngIf="userForm.get('name').errors">
+      <label *ngIf="userForm.get('name').errors['maxlength']" [ngClass] = "'error'"> Name is too long. </label>
+      <label *ngIf="userName.errors['required']" [ngClass] = "'error'"> Name is  required. </label>
+    </div>
+  </div>
+  <div> 
+    Age: <input formControlName="age"  placeholder="Enter Age">
+	<label *ngIf="userForm.get('age').invalid" [ngClass] = "'error'"> Age is required. </label>
+  </div>
+  <div>
+    City: <input formControlName="city"  placeholder="Enter City">
+  </div>
+  <div>
+    Country: <input formControlName="country" placeholder="Enter Country">
+  </div>
+  <div formArrayName="hobbies">
+    <button type="button" (click)="addHobby()">Add Hobby</button>
+     <div *ngFor="let hobby of userForm.get('hobbies').controls;let i=index">
+       <input type=text [formControlName]="i" />       
+     </div>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+    <button type="button" (click) = "setDefaultValue()">Set Default</button>	
+  </div>
+ </form>
+<div> 
+<div *ngIf="userForm.valid" >
+  {{userForm.value}}
+  Name : {{userForm.get('name').value}} <br>
+  Age  : {{userForm.get('age').value}} <br>
+  City : {{userForm.get('city').value}} <br>
+Country: {{userForm.get('country').value}}
+Hobbies: <div *ngFor="let h of userForm.get('hobbies').controls">{{h.value}}</div>
+</div>  

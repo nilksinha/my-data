@@ -1,0 +1,44 @@
+<form [formGroup]="departmentForm" (ngSubmit)="onDepartmentFormSubmit()">
+  <table>
+    <tr><td>Enter Department Name</td><td><input formControlName="deptName">
+	  <label *ngIf="departmentForm.get('deptName').invalid && processValidation" [ngClass] = "'error'"> 
+      Department is required. </label>
+    </td></tr>
+    <tr><td colspan="2">
+	  <button *ngIf="!departmentIdToUpdate">CREATE</button>  
+	  <button *ngIf="departmentIdToUpdate">UPDATE</button>  
+	  <button (click)="backToCreatedepartment()" *ngIf="departmentIdToUpdate">Go Back</button>  
+    </td></tr>
+  </table>
+ </form> 
+<div *ngIf="statusCode === 201" [ngClass] = "'success'">
+	    Department added successfully.
+   </div>   
+   <div *ngIf="statusCode === 409" [ngClass] = "'success'">
+        Department already exists.
+   </div>   	
+   <div *ngIf="statusCode === 200" [ngClass] = "'success'">
+        Department updated successfully.
+   </div>   	      
+   <div *ngIf="statusCode === 204" [ngClass] = "'success'">
+        Department deleted successfully.
+   </div>   	   
+   <div *ngIf="statusCode === 500" [ngClass] = "'error'">
+        Internal Server Error.
+   </div>	
+<p align=center>
+  All Departments
+</p>
+<table align="center">
+  <tr>
+    <th>DeptId</th>
+    <th>DeptName</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor ="let dept of deptList">
+    <td>{{dept.id}}</td>
+    <td>{{dept.deptName}}</td>
+    <td colspan="2"><button type="button" (click)="loadDepartmentToEdit(dept.id)">Edit</button> | 	  
+    <button type="button" (click)="deleteDepartment(dept.id)">Delete</button></td>
+  </tr>
+</table>

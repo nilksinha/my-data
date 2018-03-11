@@ -1,0 +1,22 @@
+<!-- <h1>Book Datails</h1>
+<table>
+  <tr><td>Book Name: </td><td>{{name}}</td></tr>
+  <tr><td>Auther Name:</td><td>{{author}}</td></tr>
+  <tr><td>Price: </td><td>{{price}}</td></tr>
+
+</table> -->
+
+
+<!-- Name: {{name}}
+Authoer: {{author}}
+Price: {{price}} -->
+Input Book Details
+<table>
+<tr><td><input type="text" #bookName></td></tr>
+<tr><td><input type="text" #bookAuthor></td></tr>
+<tr><td><input type="text" #bookPrice></td></tr>
+<tr><td><input type="button" value="submit" (click)="addBookRecord(bookName.value, bookAuthor.value, bookPrice.value )"></td></tr>
+</table>
+
+
+

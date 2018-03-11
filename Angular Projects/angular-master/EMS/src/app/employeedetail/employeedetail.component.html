@@ -1,0 +1,46 @@
+ <form #employeeForm="ngForm" (ngSubmit)="save()">
+  <div class="row col-sm-6">   
+      <label for="employeeId">Employee Id:</label>
+      <input type="number" class="form-control" id="empId" [(ngModel)]="newEmployee.empId" name="empId">    
+  </div>
+  <div class="row col-sm-6">  
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" required class="form-control" id="name" [(ngModel)]="newEmployee.name" name="name" #name="ngModel">
+        <div [hidden]="name.valid || name.pristine"
+             class="alert alert-danger">
+          Name is required
+        </div>
+      </div>
+  </div>
+  <div class="form-group col-sm-6">
+    <label for="city">City:</label>
+    <input type="text" class="form-control" required id="city" [(ngModel)]="newEmployee.city" name="city" #city="ngModel">
+    <div [hidden]="city.valid || mobileNo.pristine"
+             class="alert alert-danger">
+          City is required
+    </div>
+  </div>
+  <div class="form-group col-sm-6">
+    <label for="mobileNo">MobileNo:</label>
+    <input type="text" required class="form-control" id="mobileNo" [(ngModel)]="newEmployee.mobileNo" name="mobileNo" #mobileNo="ngModel">
+    <div [hidden]="mobileNo.valid || mobileNo.pristine"
+             class="alert alert-danger">
+          Mobile Number is required
+    </div>
+  </div>
+  <div class="form-group col-sm-6">
+    <label for="deptId">Department:</label>
+    <select class="form-control" id="deptId" name="deptId" [(ngModel)]="newEmployee.deptId">
+        <option value="-1">Select</option>
+        <option *ngFor="let dept of departments" value="{{dept.deptId}}">{{dept.deptName}}</option>        
+    </select>
+  </div>
+  <button type="submit" class="btn btn-success" [disabled]="!employeeForm.form.valid">Submit</button>
+</form> 
+<div [hidden]="!submitted">
+Name is : {{ newEmployee.name }}
+City is : {{ newEmployee.city }}
+MobileNo : {{ newEmployee.mobileNo }}
+DeptId : {{ newEmployee.deptId }}
+</div>  
