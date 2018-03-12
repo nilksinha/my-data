@@ -1,0 +1,307 @@
+<!-- Header -->
+
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark" style="background-color: #1976d2 !important; height:55px">
+    <!-- Brand -->
+    <img class="navbar-brand" src="../assets/rsz_mantix_logo.png" href="#">
+  
+    <!-- Toggler/collapsibe Button -->
+    <button (click)="toggleCollapse()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" [class.show]="show" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Courses
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Link 1</a>
+              <a class="dropdown-item" href="#">Link 2</a>
+              <a class="dropdown-item" href="#">Link 3</a>
+            </div>
+          </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Placement</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Contact Us</a>
+        </li> 
+      </ul>
+      <div class="search-container">
+      <input  aria-label="search" placeholder="Search" type="search">
+    </div>
+    </div> 
+  </nav>
+
+  <div class="footer-container" id="footer" style="background: url(web-content/img/backgrounds/green.jpg);">
+
+  
+
+         
+        
+    
+    
+    	
+		<footer class="social bg-secondary-1">
+				<div class="container social-bar no-pad">
+					<div class="col-md-3 col-sm-6 no-pad">
+						<a href="#">
+							<div class="link bg-twitter">
+								<div class="initial">
+									<i class="icon social_twitter"></i>
+								</div>
+							
+								<div class="hover-state">
+									<span class="text-white">Follow On Twitter</span>
+								</div>
+							</div>
+						</a>
+					</div><!--end of individual link-->
+					
+					<div class="col-md-3 col-sm-6 no-pad">
+						<a href="#">
+							<div class="link bg-facebook">
+								<div class="initial">
+									<i class="icon social_facebook"></i>
+								</div>
+							
+								<div class="hover-state">
+									<span class="text-white">Friends on Facebook</span>
+								</div>
+							</div>
+						</a>
+					</div><!--end of individual link-->
+					
+					<div class="col-md-3 col-sm-6 no-pad">
+						<a href="#">
+							<div class="link bg-googleplus">
+								<div class="initial">
+									<i class="icon social_googleplus"></i>
+								</div>
+							
+								<div class="hover-state">
+									<span class="text-white">Search on Google</span>
+								</div>
+							</div>
+						</a>
+					</div><!--end of individual link-->
+					
+					<div class="col-md-3 col-sm-6 no-pad">
+						<a href="#">
+							<div class="link bg-tumblr">
+								<div class="initial">
+									<i class="icon icon_mail"></i>
+								</div>
+							
+								<div class="hover-state">
+									<span class="text-white">Mail to mantix</span>
+								</div>
+							</div>
+						</a>
+					</div><!--end of individual link-->
+				</div>
+				<div class="container footer-text">
+					<div class="row">
+						<div class="col-sm-4 col-md-2 ">
+							<h3><strong>N</strong>etworks</h3>
+							<ul>
+								<li><a>Pune</a></li>
+								<li><a>Mumbai</a></li>
+								<li><a>Delhi</a></li>
+								<li><a>Bangalore</a></li>
+								<li><a>Hyderabad</a></li>	
+								<li><a>Ahmedabad</a></li>
+								<li><a>Kolkata</a></li>
+								<li><a>Chennai</a></li>
+								<li><a>Bhopal</a></li>
+								<li><a>Patna</a></li>
+								<li><a>Ranchi</a></li>
+								
+							</ul>
+							
+						</div>
+						<div class="col-sm-4 col-md-3">
+							
+							<h3><strong>S</strong>ervices</h3>
+							<div>
+								<ul>
+									<li><a href="custom-web-development">Web Development</a></li>
+									<li><a href="mobile-application-development">Mobile Application</a></li>
+									<li><a href="uiux-design">UX / UI Design</a></li>
+									<li><a href="ecommerce-solutions">E-Commerce Solution</a></li>
+									<li><a href="website-analysis">Website Analysis</a></li>
+									<li><a href="logo-design">Logo Design</a></li>
+									<li><a href="animation">Animation</a></li>
+									<li><a href="social-media-marketing">Social Media Marketing</a></li>
+									<li><a href="search-engine-optimization-seo">Search Engine Optimization</a></li>
+									<li><a href="ppc-management-service">PPC Management Services</a></li>
+								</ul>
+							</div>
+						</div>
+						
+						
+						<div class="col-sm-4 col-md-2">
+							<h3><strong>L</strong>inks</h3>
+							<ul>
+								<li><a href="">Home</a></li>
+								<li><a href="services">Services</a></li>
+								<li><a href="about-us">About</a></li>
+								<li><a href="our-ortfolio">Portfolio</a></li>
+								<li><a href="careers">Career</a></li>
+								<li><a href="products">Products</a></li>	
+								<li><a href="contact-us">Contact Us</a></li>		
+							</ul>
+							
+						</div>
+						<div class=" col-md-5" style="">
+
+							<div class="news-letter">
+								<h3><strong>S</strong>ubscribe Now</h3>
+								<p>Join our mailing list to receive news </p>
+								<form id="news-letter" class="col-md-10" novalidate="novalidate">
+									<div class="news-alert"></div>
+									<input type="text" placeholder="Type Your Mail Here..." class="input-subscribe" name="news_email" id="news_email" required="" aria-required="true"><input type="submit" class="btn btn-subscribe" value="Subscribe Now"> </form>
+							</div>
+						</div>
+						<div class="col-md-5 ">
+							<!-- <img id="logo-pic" src="img/logo/logo.png" width="100" height="48" alt="StarterKit"> -->
+							<div class="call-us-box" style="border: 1px dashed;margin-bottom: 30px;margin-top:40px;background:#000;padding:0px 15px;">
+								<h3><strong>C</strong>all Us:</h3>
+								<div>
+									(+91) 20 6415 3249
+								</div>
+								<h3><strong>E</strong>mail:</h3>
+								<div>
+									info@mantix.in
+								</div>
+								<h3><strong>A</strong>ddress:</h3>
+								<div>
+									Mantix InfoTech Private Limited, 3rd Floor Gitai Building, Pimple Saudagar, Pune, Maharashtra-411017
+								</div>
+								<h3><strong>W</strong>ebsite:</h3>
+								<div>
+									www.mantix.in
+								</div><br>
+							</div>
+						</div>
+						
+						
+
+						
+					</div><!--end of row-->
+					
+				</div><!--end of container-->
+				<div class="container footer-bottom-text">
+					<div class="sub text-center">© Copyright 2018 <a href="#">Mantix InfoTech Private Limited</a> - All Rights Reserved</div>
+				</div>
+			</footer>		
+		
+        
+		<!--back-to-top-->
+		<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+		<!--back-to-top-->
+
+
+		<!--Quote popup content -->
+							<div class="modal fade" id="quote-popup" tabindex="1" role="dialog" aria-labelledby="myModalLabel">
+							    <div class="modal-dialog">
+							    
+							      <!--Quote Modal content-->
+							      <div class="modal-content">
+							      	<span class="ribbon top-left ribbon-primary">
+									<small>QUOTE</small>
+									</span>
+							        <div class="modal-header">
+							          <button type="button" class="close" data-dismiss="modal">×</button>
+							          <h2 style="padding-bottom:0px;margin-bottom:0px;">REQUEST A QUOTE</h2>
+							        </div>
+							        <div class="modal-body">
+							          
+							          	<form id="QuoteForm">
+										  
+										  <!-- One "tab" for each step in the form: -->
+										  <div class="tab">
+										    <h3 class="h3">We will ask a few questions to connect you with the right Designers</h3>
+										  </div>
+										  <div class="tab"><h3>What are you looking</h3>
+										    <p><input type="radio" oninput="this.className = ''" name="website-status"> New Website/App</p>
+										    <p><input type="radio" oninput="this.className = ''" name="website-status"> Change Existing Website/App</p>
+										  </div>
+										  <div class="tab"><h3>Which type of Website/ App</h3>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> Simple Website</p>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> Dynamic Website</p>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> E-Commerce Website</p>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> Android App</p>
+										  </div>
+										  <div class="tab"><h3>What quality of website are you looking?</h3>
+										    <p><input type="radio" oninput="this.className = ''" name="budget"> Starting Budget<span>Rs. 10000 - 20000</span></p>
+										    <p><input type="radio" oninput="this.className = ''" name="budget"> Standard<span>Rs. 20000 - 30000</span></p>
+										    <p><input type="radio" oninput="this.className = ''" name="budget"> Best<span>Rs. 40000 - 60000</span></p>
+										    <p><input type="radio" oninput="this.className = ''" name="budget"> Premium<span>Rs. 60000 - 100000</span></p>
+										  </div>
+										  <div class="tab"><h3>Write us description your project</h3>
+										    <p><textarea class="form-control validate-required" placeholder="Write here your project description" rows="5"></textarea></p>
+										  </div>
+										  <div class="tab"><h3>How soon are you looking to hire?</h3>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> This Month</p>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> Immediately</p>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> Not sure, just exploring pricing and options</p>
+										  </div>
+										  <div class="tab"><h3>Please tell us about your self</h3>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> I am employed</p>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> I have an existing business</p>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> Just launched my own startup/company</p>
+										    <p><input type="radio" oninput="this.className = ''" name="website-type"> Other</p>
+										  </div>
+										  <div class="tab"><h3>Location where you require the Web designer?</h3>
+										    <input type="text" class="form-control">
+										    <small>E.g. Pune, hinjewadi</small>
+										  </div>
+										  <div class="tab col-md-8 col-md-offset-2"><h3>Last Step</h3>
+										    <input type="text" class="form-control" placeholder="Mobile No"><br>
+										    <input type="text" class="form-control" placeholder="Email Id">
+										  </div>
+										  <!-- Circles which indicates the steps of the form: -->
+										  <div style="text-align:center;margin-top:40px;display:none;">
+										    <span class="step"></span>
+										    <span class="step"></span>
+										    <span class="step"></span>
+										    <span class="step"></span>
+										    <span class="step"></span>
+										    <span class="step"></span>
+										    <span class="step"></span>
+										    <span class="step"></span>
+										    <span class="step"></span>
+										  </div>
+										</form>
+
+							        </div>
+							        <div class="modal-footer">
+							          	<div style="overflow:auto;">
+										    <div style="float:right;">
+										      <button type="button" id="prevBtn" class="btn btn-primary btn-green" onclick="nextPrev(-1)">Previous</button>
+										      <button type="button" id="nextBtn" class="btn btn-primary btn-green" onclick="nextPrev(1)">Next</button>
+										    </div>
+										</div>
+							        </div>
+							      </div>
+							      
+							    </div>
+							</div>
+							<!--Quote popup contant -->
+
+		<script src="web-content/js/contact-ajax.js"></script>
+		<script src="web-content/js/jquery.validate.js"></script>
+    
+
+
+
+				</div>
